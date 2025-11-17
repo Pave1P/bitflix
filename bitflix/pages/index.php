@@ -1,5 +1,5 @@
 <?php
-require_once '../bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 $currentPage = 'home';
 $genreName = $_GET['genre'] ?? null;
@@ -11,4 +11,4 @@ $title = $genreName ?: 'Каталог фильмов';
 $data = ['movies' => $movies, 'search' => $search];
 $contentTemplate = 'main';
 
-include '../templates/layout.php';
+include __DIR__ . '/../templates/layout.php';
