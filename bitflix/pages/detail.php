@@ -1,5 +1,5 @@
 <?php
-require_once '../bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 $id = $_GET['id'] ?? null;
 $movie = $id ? getMovieById((int)$id) : null;
@@ -10,4 +10,4 @@ $title = $movie ? $movie['title'] . ' (' . $movie['year'] . ')' : 'Фильм н
 $data = ['movie' => $movie];
 $contentTemplate = 'detail';
 
-include '../templates/layout.php';
+include __DIR__ . '/../templates/layout.php';
