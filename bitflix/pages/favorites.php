@@ -1,9 +1,9 @@
 <?php
-require_once '../bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 $currentPage = 'favorites';
 $title = 'Избранное';
 $data = [];
-$contentTemplate = 'main'; // можно сделать отдельный шаблон
+$contentTemplate = 'main';
 
 include '../templates/layout.php';
